@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /language/greek/greek-inputenc
+# catalog-date 2008-08-21 09:38:31 +0200
+# catalog-license lppl
+# catalog-version 1.2
 Name:		texlive-greek-inputenc
 Version:	1.2
 Release:	1
@@ -37,6 +43,7 @@ definition files for use with inputenc.
 %{_texmfdistdir}/tex/latex/greek-inputenc/iso-8859-7.def
 %{_texmfdistdir}/tex/latex/greek-inputenc/macgreek.def
 %doc %{_texmfdistdir}/doc/latex/greek-inputenc/test.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,3 +54,5 @@ definition files for use with inputenc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
