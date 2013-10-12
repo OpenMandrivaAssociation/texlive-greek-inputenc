@@ -1,12 +1,12 @@
-# revision 15878
+# revision 31232
 # category Package
 # catalog-ctan /language/greek/greek-inputenc
-# catalog-date 2008-08-21 09:38:31 +0200
+# catalog-date 2013-07-18 14:42:28 +0200
 # catalog-license lppl
-# catalog-version 1.2
+# catalog-version 1.4.1
 Name:		texlive-greek-inputenc
-Version:	1.2
-Release:	2
+Version:	1.4.1
+Release:	1
 Summary:	Greek encoding support for inputenc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/greek/greek-inputenc
@@ -33,8 +33,15 @@ definition files for use with inputenc.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/greek-inputenc/iso-8859-7.def
+%{_texmfdistdir}/tex/latex/greek-inputenc/lgrenc.dfu
 %{_texmfdistdir}/tex/latex/greek-inputenc/macgreek.def
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test.tex
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/README
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/README.html
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/lgrenc.dfu.html
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-iso-8859-7.pdf
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-iso-8859-7.tex
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-utf8.pdf
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-utf8.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,17 +52,3 @@ definition files for use with inputenc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
-+ Revision: 752431
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
-+ Revision: 718581
-- texlive-greek-inputenc
-- texlive-greek-inputenc
-- texlive-greek-inputenc
-- texlive-greek-inputenc
-
