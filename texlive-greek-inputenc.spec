@@ -6,7 +6,7 @@
 # catalog-version 1.4.1
 Name:		texlive-greek-inputenc
 Version:	1.4.1
-Release:	1
+Release:	2
 Summary:	Greek encoding support for inputenc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/greek/greek-inputenc
