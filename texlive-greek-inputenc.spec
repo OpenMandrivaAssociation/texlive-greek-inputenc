@@ -1,12 +1,6 @@
-# revision 31232
-# category Package
-# catalog-ctan /language/greek/greek-inputenc
-# catalog-date 2013-07-18 14:42:28 +0200
-# catalog-license lppl
-# catalog-version 1.4.1
 Name:		texlive-greek-inputenc
-Version:	1.4.1
-Release:	9
+Version:	1.6
+Release:	1
 Summary:	Greek encoding support for inputenc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/greek/greek-inputenc
@@ -32,16 +26,8 @@ definition files for use with inputenc.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/greek-inputenc/iso-8859-7.def
-%{_texmfdistdir}/tex/latex/greek-inputenc/lgrenc.dfu
-%{_texmfdistdir}/tex/latex/greek-inputenc/macgreek.def
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/README
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/README.html
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/lgrenc.dfu.html
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-iso-8859-7.pdf
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-iso-8859-7.tex
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-utf8.pdf
-%doc %{_texmfdistdir}/doc/latex/greek-inputenc/test-utf8.tex
+%{_texmfdistdir}/tex/latex/greek-inputenc
+%doc %{_texmfdistdir}/doc/latex/greek-inputenc
 
 #-----------------------------------------------------------------------
 %prep
