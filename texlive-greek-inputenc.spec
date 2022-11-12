@@ -1,12 +1,12 @@
 Name:		texlive-greek-inputenc
-Version:	1.6
-Release:	2
+Version:	51612
+Release:	1
 Summary:	Greek encoding support for inputenc
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/greek/greek-inputenc
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/greek-inputenc.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/greek-inputenc.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/greek-inputenc.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/greek-inputenc.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ The bundle provides Macintosh Greek encoding and ISO 8859-7
 definition files for use with inputenc.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -31,7 +31,7 @@ definition files for use with inputenc.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
