@@ -1,5 +1,5 @@
 Name:		texlive-greek-inputenc
-Version:	66119
+Version:	66309
 Release:	1
 Summary:	Greek encoding support for inputenc
 Group:		Publishing
