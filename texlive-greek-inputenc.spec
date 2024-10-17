@@ -3,7 +3,7 @@ Version:	66634
 Release:	1
 Summary:	Greek encoding support for inputenc
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/greek/greek-inputenc
+URL:		https://www.ctan.org/tex-archive/language/greek/greek-inputenc
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/greek-inputenc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/greek-inputenc.doc.r%{version}.tar.xz
